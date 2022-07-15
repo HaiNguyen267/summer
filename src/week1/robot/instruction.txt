@@ -1,0 +1,22 @@
+Write a program that ask user to enter robot name, and a message
+for example, ">" indicates user input
+
+Enter robot name:
+>
+Enter message:
+>
+
+The ask user to choose an action performed by the robot
+for example,
+
+1. Remind message
+2. Do calculation
+
+The robot then will do the action, if user chooses 1, it prints out the message
+if user chooses 2, it asks to enter 2 numbers and then print out the sum
+
+for example,
+
+Enter two numbers:
+>
+The sum: ...
