@@ -7,6 +7,6 @@ public class PC extends Computer {
     public void run() {
         bootStrapOs();
         checkHardware();
-        askPassword();
+//        askPassword();
     }
 }

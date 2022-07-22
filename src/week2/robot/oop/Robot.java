@@ -3,12 +3,14 @@ package week2.robot.oop;
 import java.util.Scanner;
 
 public class Robot {
+    private static int numberOfCreatedRobot = 0;
     private String name;
     private String msg;
 
     public Robot(String name, String msg) {
         this.name = name;
         this.msg = msg;
+        numberOfCreatedRobot++;
     }
 
     public void run() {
@@ -47,4 +49,7 @@ public class Robot {
 
     }
 
+    public static int getNumberOfCreatedRobot() {
+        return numberOfCreatedRobot;
+    }
 }
