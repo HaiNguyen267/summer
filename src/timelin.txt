@@ -1,0 +1,9 @@
+w1: oop
+w2: oop
+w3: oop
+w4: I/O writing and reading files
+w5: exception
+w6: regex
+w7: Collections (java 8)
+w8: Stream (java 8)
+Generics, Concurrency
