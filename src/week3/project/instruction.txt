@@ -1,0 +1,54 @@
+write a program that prints out a menu:
+
+Choose a pet or action:
+1. Cat
+2. Dog
+3. Hamster
+4. Parrot
+5. Buy more food (30)
+0. Exit
+
+If user enter 1(Cat):
+1. Feed
+2. Play with toys
+3. Make sounds
+0. Back
+if user feed that cat, it will take 3 food, and the cat will make sound
+
+If user enters 2(Dog)
+1. Feed
+2. Train
+3. Make sounds
+.
+0. Back
+if user feed that cat, it will take 5 food, and the dog will make sound
+if user choose to train the dog:
+
+Enter the action name:
+> Sit
+Enter the action:
+> I am sitting down
+
+1. Feed
+2. Train
+3. Make sounds
+4. Sit
+.
+0. Back
+
+If user enter 3(Hamster)
+1. Feed
+2. Run the treat mill
+3. Make sounds
+0. Back
+
+If user enter 4(Parrot)
+1. Feed
+2. Teach
+3. Make sounds
+4. Sit
+
+if user enter 2 to teach the parrot:
+
+Enter something:
+> hello

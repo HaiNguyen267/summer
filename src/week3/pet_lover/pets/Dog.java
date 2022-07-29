@@ -6,6 +6,8 @@ public class Dog extends Pet {
 
     public Dog(User owner) {
         super(owner);
+        this.feedingAmount = PetInfo.DOG.getFeedingAmount();
+        this.sound = PetInfo.DOG.getSound();
     }
 
     @Override

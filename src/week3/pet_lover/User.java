@@ -20,4 +20,7 @@ public class User {
             System.out.println("You fed the pet");
         }
     }
+
+    public void runBuyFoodMenu() {
+    }
 }
