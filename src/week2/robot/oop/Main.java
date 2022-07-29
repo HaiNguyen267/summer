@@ -14,7 +14,7 @@ public class Main {
 //
 // run robot (instance method)
         robot.run();
-        robot2.run();
+//        robot2.run();
 
         int numberOfCreatedRobot = Robot.getNumberOfCreatedRobot();
         System.out.println(numberOfCreatedRobot);
