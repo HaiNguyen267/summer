@@ -1,0 +1,85 @@
+
++) Hamster has 3 actions, when user enters 3 to choose Hamster, the program print the menu:
+
+Hamster
+1. Feed
+2. Run the treadmill
+3. Make sounds
+0. Back
+
+     -) if user feeds the hamster, he loses 1 food unit,
+     -) if user enters 2, the program will print out: "Sqeak! I am running the treadmill"
+     -) if user enters 3, the program will print out: "Sqeak", which is the sound of the hamster
+
+example:
+note: ">" indicates user input
+
+ Your balance: $1000
+ Your food: 30
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+ > 3
+
+ Hamster
+ 1. Feed
+ 2. Run the treadmill
+ 3. Make sounds
+ 0. Back
+ > 2
+ Sqeak! I am running the treadmill
+
+ Hamster
+ 1. Feed
+ 2. Run the treadmill
+ 3. Make sounds
+ 0. Back
+ > 1
+ Sqeak
+ You fed the pet
+
+ Hamster
+ 1. Feed
+ 2. Run the treadmill
+ 3. Make sounds
+ 0. Back
+ > 2
+ Sqeak! I am running the treadmill
+
+ Hamster
+ 1. Feed
+ 2. Run the treadmill
+ 3. Make sounds
+ 0. Back
+ > 3
+ Sqeak
+
+ Hamster
+ 1. Feed
+ 2. Run the treadmill
+ 3. Make sounds
+ 0. Back
+ > 1
+ Sqeak
+ You fed the pet
+
+ Hamster
+ 1. Feed
+ 2. Run the treadmill
+ 3. Make sounds
+ 0. Back
+ > 0
+
+ Your balance: $1000
+ Your food: 28
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit

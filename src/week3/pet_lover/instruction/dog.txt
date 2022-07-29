@@ -1,0 +1,126 @@
+
++) Dog has 3 default actions but user can train it to do more, when user enters 2 to choose Dog, the program print the menu:
+
+  Dog
+  1. Feed
+  2. Train
+  3. Make sounds
+  0. Back
+
+
+ -) if user feeds the dog, he loses 5 food units,
+ -) if user enters 2, the program ask user in enter the action name and action message
+    , the dog will then remember and can do it next times:
+
+    Enter the action name:
+    >
+    Enter the action message:
+    >
+
+
+-) if user enters 3, the program will print out: "Woof woof", which is the sound of the dog
+
+ example:
+ note: ">" indicates user input
+
+ Your balance: $1000
+ Your food: 30
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+ > 2
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 0. Back
+ > 1
+ Woof woof
+ You fed the pet
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 0. Back
+ > 2
+ Enter the action name:
+ > Sit
+ Enter the action message:
+ > i am sitting down
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 4. Sit
+ 0. Back
+ > 3
+ Woof woof
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 4. Sit
+ 0. Back
+ > 4
+ i am sitting down
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 4. Sit
+ 0. Back
+ > 2
+ Enter the action name:
+ > Turn around
+ Enter the action message:
+ > turning around, sir
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 4. Sit
+ 5. Turn around
+ 0. Back
+ > 0
+
+ Your balance: $1000
+ Your food: 25
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+ > 2
+
+ Dog
+ 1. Feed
+ 2. Train
+ 3. Make sounds
+ 4. Sit
+ 5. Turn around
+ 0. Back
+ > 0
+
+ Your balance: $1000
+ Your food: 25
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+
+

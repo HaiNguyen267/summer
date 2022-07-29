@@ -1,0 +1,112 @@
+
++) Parrot has 3 actions, when user enters 4 to choose Parrot, the program print the menu:
+
+    Parrot
+    1. Feed
+    2. Teach
+    3. Make sounds
+    0. Back
+
+     -) if user feeds the parrot, he loses 1 food unit,
+     -) if user enters 2, the program allow user to teach the parrot
+
+         Enter something to teach the parrot:
+         >
+
+     the parrot then repeats the sentence, and remembers it as its sound
+
+     -) if user enters 3, the program will print out: "Whistle" by default, or whatever the user taught it
+
+example:
+note: ">" indicates user input
+
+ Your balance: $1000
+ Your food: 30
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+ > 4
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 1
+ Whistle
+ You fed the pet
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 2
+ Enter something to teach the parrot:
+ > Good morning
+ Good morning
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 3
+ Good morning
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 2
+ Enter something to teach the parrot:
+ > Hi
+ Hi
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 0
+
+ Your balance: $1000
+ Your food: 29
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+ > 4
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 3
+ Hi
+
+ Parrot
+ 1. Feed
+ 2. Teach
+ 3. Make sounds
+ 0. Back
+ > 0
+
+ Your balance: $1000
+ Your food: 29
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit

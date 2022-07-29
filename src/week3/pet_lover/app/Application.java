@@ -1,10 +1,7 @@
-package week3.pet_lover;
+package week3.pet_lover.app;
 
 import week3.pet_lover.pets.*;
-
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import week3.pet_lover.user.User;
 
 public class Application {
     private User user;
@@ -25,18 +22,19 @@ public class Application {
         parrot = new Parrot(user);
     }
 
-    /*public void runMenu() {
+    public void runMenu() {
         String msg = "Choose a pet or action:\n" +
                 "1. Cat\n" +
                 "2. Dog\n" +
                 "3. Hamster\n" +
-                "3. Parrot\n" +
+                "4. Parrot\n" +
                 "5. Buy more food\n" +
-                "0. Back";
-        List<Integer> validChoices = (List<Integer>) IntStream.rangeClosed(0, 6).collect(Collectors.toList());
-        Menu menu = new Menu(msg, validChoices);
+                "0. Exit";
+
+        Menu menu = new Menu(msg, 0, 5);
 
         while (!menu.isStopped()) {
+            System.out.println(user.getInfo());
             int choice = menu.printMenuAndGetUserChoice();
 
             if (choice == 0) {
@@ -45,11 +43,18 @@ public class Application {
                 user.runBuyFoodMenu();
             } else {
                 Pet pet = choosePetBasedOnUserChoice(choice);
+                pet.runActionMenu();
             }
         }
-    }*/
+    }
 
     private Pet choosePetBasedOnUserChoice(int choice) {
+        switch (choice) {
+            case 1: return cat;
+            case 2: return dog;
+            case 3: return hamster;
+            case 4: return parrot;
+        }
 
         return null;
     }

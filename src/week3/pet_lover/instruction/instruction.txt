@@ -1,0 +1,55 @@
+Write a program that prints out a menu:
+
+Your balance: $1000
+Your food: 30
+Choose a pet or action:
+1. Cat
+2. Dog
+3. Hamster
+4. Parrot
+5. Buy more food
+0. Exit
+
++) By default, the user has $1000 and 30 foods, he can use the money to buy
+food ($1 = 3 food), and use the food the feed the pet. Dog eats 5 food units each time,
+cat eats 3, hamster and parrot eats 1
+
++) User can choose a pet to interact with, or buy more food. Each pet has its own
+action list it can perform
+
++) Check the txt files of different pets to learn more. Or you can run the Main class as the example
+
++) After user feeds the pet, it will make its sound and program prints out "You fed the pet".
+But you should make sure user have enough food to feed the pet, if he doesn't, print out "You don't have enough food"
+
++) When user chooses 5 to buy more food: the program ask how much money he wants to spend buying food.
+If user enters more money than he has, then print "Not enough money. Please enter again: "
+
+Example:
+note: ">" indicates user input
+    Your balance: $1000
+    Your food: 30
+    Choose a pet or action:
+    1. Cat
+    2. Dog
+    3. Hamster
+    4. Parrot
+    5. Buy more food
+    0. Exit
+    > 5
+
+    Enter amount of money spent buying food ($1 = x3 food):
+    > 2000000000
+    Not enough money. Please enter again:
+    > 150
+
+    Your balance: $850
+    Your food: 480
+    Choose a pet or action:
+    1. Cat
+    2. Dog
+    3. Hamster
+    4. Parrot
+    5. Buy more food
+    0. Exit
+

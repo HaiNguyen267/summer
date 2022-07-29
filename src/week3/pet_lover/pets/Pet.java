@@ -1,7 +1,7 @@
 package week3.pet_lover.pets;
 
 
-import week3.pet_lover.User;
+import week3.pet_lover.user.User;
 
 public abstract class Pet {
     protected int feedingAmount;

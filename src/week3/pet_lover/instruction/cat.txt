@@ -1,0 +1,80 @@
+
++) Cat has 3 action, when user enters 1 to choose Cat, the program print the menu:
+
+Cat
+1. Feed
+2. Play with toys
+3. Make sounds
+0. Back
+
+     -) if user feeds the cat, he loses 3 food units,
+     -) if user enters 2, the program will print out: "Meow! i am playing with toys"
+     -) if user enters 3, the program will print out: "Meow meow", which is the sound of the cat
+
+example:
+note: ">" indicates user input
+
+ Your balance: $1000
+ Your food: 30
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+ > 1
+
+ Cat
+ 1. Feed
+ 2. Play with toys
+ 3. Make sounds
+ 0. Back
+ > 2
+ Meow! i am playing with toys
+
+ Cat
+ 1. Feed
+ 2. Play with toys
+ 3. Make sounds
+ 0. Back
+ > 1
+ Meow meow
+ You fed the pet
+
+ Cat
+ 1. Feed
+ 2. Play with toys
+ 3. Make sounds
+ 0. Back
+ > 3
+ Meow meow
+
+ Cat
+ 1. Feed
+ 2. Play with toys
+ 3. Make sounds
+ 0. Back
+ > 1
+ Meow meow
+ You fed the pet
+
+ Cat
+ 1. Feed
+ 2. Play with toys
+ 3. Make sounds
+ 0. Back
+ > 0
+
+ Your balance: $1000
+ Your food: 24
+ Choose a pet or action:
+ 1. Cat
+ 2. Dog
+ 3. Hamster
+ 4. Parrot
+ 5. Buy more food
+ 0. Exit
+
+
+
