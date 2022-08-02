@@ -2,6 +2,7 @@ package week3.pet_lover.app;
 
 import week3.pet_lover.pets.*;
 import week3.pet_lover.user.User;
+// imperative and declarative
 
 public class Application {
     private User user;
