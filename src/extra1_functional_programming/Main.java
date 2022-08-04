@@ -1,33 +1,38 @@
 package extra1_functional_programming;
 
+import week1.object.Cat;
+
 import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
 
-        int[] arr = {-4, 20, 6, 91, 16, 0, -20};
 
-        int max = arr[0];
-        // imperative
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
+        List<String> list = Arrays.asList("Hai", "Hieu", "Lam",  "Tuan", "Quan", "Vu");
+
+        long count = list.stream()
+                .filter(name -> name.length() == 4)
+                .count();
+
+        List<String> sortedList = list
+                            .stream()
+                            .sorted((name1, name2) -> name1.length() > name2.length() ? 1 : 0)
+                            .toList();
+
+        Optional<String> op1 = Optional.of("Quan");
+        // NPE
+        if (op1.isPresent()) {
+            System.out.println(op1.get());
+        } else {
+            System.out.println("Null");
         }
 
-        // declarative
-        int max2 = Arrays.stream(arr).max().getAsInt();
+        System.out.println("sortedList = " + sortedList);
 
-        FriendlyMan man = new FriendlyMan();
-        man.say();
-
-        HelloSayer man2 = new HelloSayer() {
-            @Override
-            public void say() {
-                System.out.println("Hi");
-            }
-        };
-        man2.say();
     }
 }
