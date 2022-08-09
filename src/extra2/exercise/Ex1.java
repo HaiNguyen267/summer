@@ -1,10 +1,9 @@
 package extra2.exercise;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Ex1 {
     public static void main(String[] args) {
@@ -77,25 +76,43 @@ public class Ex1 {
                 .forEach(c -> System.out.println(c.getIndustry()));
 
         // 14. sort student by their ids
+        List<Student> collect = students.stream()
+                .sorted(Comparator.comparingInt(Student::getId))
+                .collect(Collectors.toList());
 
         // 15. sort student by their names
+        List<Student> collect1 = students.stream()
+                .sorted(Comparator.comparing(Student::getName))
+                .collect(Collectors.toList());
 
-        // 16. sort student by their name lengthss
+        // 16. sort student by their name lengths
+        Stream<Student> sorted = students.stream()
+                .sorted(Comparator.comparingInt(s -> s.getName().length()));
 
         // 17. group students by their roles
+        Map<String, List<Student>> collect2 = students.stream()
+                .collect(Collectors.groupingBy(Student::getRole));
 
         // 18. sort employess by their salaries
+        Comparator<Employee> comp1 = Comparator.comparingInt(Employee::getSalary);
+        employees.sort(Comparator.comparingInt(Employee::getSalary));
 
         //19. sort companies by the revenue
+        companyList.sort(Comparator.comparingLong(Company::getRevenue));
 
         // 20. sort companies by the names
-
+        Stream<Company> sorted1 = companyList.stream().sorted(Comparator.comparing(Company::getName));
+//        companyList = sorted1.collect(Collectors.toList());
         // 21. sort companies by their expenses
+        companyList.stream()
+                .sorted(Comparator.comparingLong(Company::getExpense).thenComparing(Company::getRevenue));1
     }
 
     private static List<Student> createStudentList() {
 
         Student giang = new Student(1, "Giang", "Fronend");
+        Student giang2 = new Student(9, "Giang2", "Fronend");
+
         Student hai = new Student(2, "Hai", "Backend");
         Student hao = new Student(3, "Hao", "Database");
         Student hoa = new Student(4, "Hoa", "Tester");
@@ -104,7 +121,7 @@ public class Ex1 {
         Student hieu = new Student(7, "Hieu", "Mobile");
         Student hien = new Student(8, "Hien", "QA");
 
-        return Arrays.asList(giang, hai, hao, hoa, huong, hoang, hieu, hien);
+        return Arrays.asList(giang, giang2, hai, hao, hoa, huong, hoang, hieu, hien);
     }
 
     private static List<Employee> createEmployeeList() {
