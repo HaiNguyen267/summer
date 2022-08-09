@@ -36,4 +36,12 @@ public class Company {
     public void setExpense(long expense) {
         this.expense = expense;
     }
+
+    public String getIndustry() {
+        return industry;
+    }
+
+//    public String toString() {
+//        return
+//    }
 }

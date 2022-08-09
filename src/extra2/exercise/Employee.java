@@ -34,4 +34,13 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    public String toString() {
+        return this.name;
+    }
+
+    public boolean isDeveloper() {
+        return position.equals("Developer");
+    }
+
 }

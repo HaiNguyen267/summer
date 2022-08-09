@@ -2,6 +2,8 @@ package extra2.exercise;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Ex1 {
@@ -28,26 +30,51 @@ public class Ex1 {
 
         List<Employee> employees = createEmployeeList();
         // 5. double the salary of each employee
+        employees.stream().forEach(employee -> employee.setSalary(employee.getSalary() * 2));
 
         // 6. create a list containing the employee who are developer
+        employees.stream().filter(Employee::isDeveloper)
+                    .forEach(System.out::println);
 
-        // 7. change the posision of all employees who are not manager to "employee"
+        // 7. change the position of all employees who are not manager to "employee"
+        employees.stream().filter(e -> !e.getPosition().equals("Manager"))
+                    .forEach(e -> e.setPosition("Employee"));
 
         List<Student> students = createStudentList();
 
         // 8. create a list containing all students whose id is less than 5 and are frontend developer
+        List<Student> frontend = students.stream()
+                    .filter(s -> s.getId() < 5)
+                    .filter(s -> s.getRole().equals("Fronend"))
+                    .collect(Collectors.toList());
 
         // 9. create a list containing all students whose names are 3 letter long
+        students.stream()
+                .filter(s -> s.getName().length() == 3)
+                .forEach(student -> System.out.println(student.getName()));
 
         List<Company> companyList = createCompanyList();
 
         // 10. create a set containing all companies name
+        Set<String> companyNames = companyList.stream()
+                .map(Company::getName)
+                .collect(Collectors.toSet());
 
         // 11. create a set containing all industries company is doing business
+        Set<String> companyIndustries = companyList.stream()
+                .map(Company::getIndustry)
+                .collect(Collectors.toSet());
 
         // 12. create a list of companies which have positive profit
+        Predicate<Company> companyPredicate = c -> c.getRevenue() - c.getExpense() > 0;
+        long count = companyList.stream()
+                .filter(companyPredicate)
+                .count();
 
         // 13. create a list containing all tech companies
+        companyList.stream()
+                .filter(c -> c.getIndustry().equals("Tech"))
+                .forEach(c -> System.out.println(c.getIndustry()));
     }
 
     private static List<Student> createStudentList() {
