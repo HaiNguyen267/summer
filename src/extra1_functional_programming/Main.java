@@ -22,7 +22,7 @@ public class Main {
         List<String> sortedList = list
                             .stream()
                             .sorted((name1, name2) -> name1.length() > name2.length() ? 1 : 0)
-                            .toList();
+                            .collect(Collectors.toList());
 
         Optional<String> op1 = Optional.of("Quan");
         // NPE
