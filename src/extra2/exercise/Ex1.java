@@ -75,6 +75,22 @@ public class Ex1 {
         companyList.stream()
                 .filter(c -> c.getIndustry().equals("Tech"))
                 .forEach(c -> System.out.println(c.getIndustry()));
+
+        // 14. sort student by their ids
+
+        // 15. sort student by their names
+
+        // 16. sort student by their name lengthss
+
+        // 17. group students by their roles
+
+        // 18. sort employess by their salaries
+
+        //19. sort companies by the revenue
+
+        // 20. sort companies by the names
+
+        // 21. sort companies by their expenses
     }
 
     private static List<Student> createStudentList() {
