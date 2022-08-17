@@ -1,7 +1,6 @@
 package extra2.exercise;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
@@ -88,12 +87,10 @@ public class Ex1 {
         // 18. sort employess by their salaries
 
         //19. sort companies by the revenue
-        companyList.stream()
-                .sorted(Comparator.comparingLong(Company::getRevenue));
+
         // 20. sort companies by the names
-        companyList.stream().sorted(Comparator.comparing(Company::getName));
+
         // 21. sort companies by their expenses
-        companyList.sort(Comparator.comparing(Company::getExpense));
     }
 
     private static List<Student> createStudentList() {
