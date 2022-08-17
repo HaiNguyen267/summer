@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        // count the occurences of each element
         int[] arr = {1,2,4,1,1,2,3,4,2,3,1,4};
         // element 1: 4 times
         // element 2: 3 times
