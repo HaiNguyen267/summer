@@ -1,0 +1,11 @@
+Regexps basics
+https://hyperskill.org/learn/step/7580
+
+Sets, ranges, alternations
+https://hyperskill.org/learn/step/3674
+
+Shorthands
+https://hyperskill.org/learn/step/3680
+
+Quantifiers
+https://hyperskill.org/learn/step/3687
